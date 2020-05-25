@@ -197,7 +197,8 @@
                     <h3>飞闻头条、MM应用商场web网站 | 2018.11 - 2020.01</h3>
 					<p>
 						<b font-size="small">使用技术：</b>springboot 、oracle、mysql 、mybatis 、spring security 、 redis 、nginx、ActiveMQ、dubbo<br>
-						<b font-size="small">项目描述：</b> 飞闻头条(MM头条、MM资讯)是中移动的资讯信息流APP，后台架构分为接口服务、客户端后台管理系统、资讯运营管理系统、爬虫模块四个部分。系统使用springboot框架开发，接口服务部署在四台服务器，使用nginx反向代理、负载均衡，数据库使用 mysql 。项目中多处使用redis缓存以及多线程技术，提高接口的查询返回速度。使用gitlab进行代码、文档版本控制，使用 maven 进行项目管理、打包发布，测试线使用 jenkins 进行集成部署。MM应用商场是中移互联网公司在运行的一个在运行近二十年的旧系统，分为前端应用系统、后台管理系统，前端应用系统主要负责查询并缓存最后的页面模板到memcache、redis中，采用封装servlet、类似于freemarker模板的页面、以及spring开发，运行在10台服务器上，使用f5负载均衡器，保证网站服务稳定；后台内容管理系统提供给运营人员管理数据，对数据的增删改时通过ActiveMQ通知各前台应用清理hibernate的二级缓存Ehcache的查询缓存，数据库使用oracle。由于旧系统源码版本失去管理控制，无法直接在旧系统工程进行代码编译，新的活动业务接口功能在新工程上开发dubbo服务provide部署到dubbo集群服务器，并注册到zookeeper集群，再以jar包放到旧系统中以 dubbo consumer 调用远程接口。<br>
+						<b font-size="small">项目描述：</b> 飞闻头条(MM头条、MM资讯)是中移动的资讯信息流APP，后台架构分为接口服务、客户端后台管理系统、资讯运营管理系统、爬虫模块四个部分。系统使用springboot框架开发，接口服务部署在四台服务器，使用nginx反向代理、负载均衡，数据库使用 mysql 。项目中多处使用redis缓存以及多线程技术，提高接口的查询返回速度。使用gitlab进行代码、文档版本控制，使用 maven 进行项目管理、打包发布，测试线使用 jenkins 进行集成部署。<br>
+						MM应用商场是中移互联网公司在运行的一个在运行近二十年的旧系统，分为前端应用系统、后台管理系统，前端应用系统主要负责查询并缓存最后的页面模板到memcache、redis中，采用封装servlet、类似于freemarker模板的页面、以及spring开发，运行在10台服务器上，使用f5负载均衡器，保证网站服务稳定；后台内容管理系统提供给运营人员管理数据，对数据的增删改时通过ActiveMQ通知各前台应用清理hibernate的二级缓存Ehcache的查询缓存，数据库使用oracle。由于旧系统源码版本失去管理控制，无法直接在旧系统工程进行代码编译，新的活动业务接口功能在新工程上开发dubbo服务provide部署到dubbo集群服务器，并注册到zookeeper集群，再以jar包放到旧系统中以 dubbo consumer 调用远程接口。<br>
 						<b font-size="small">责任描述：</b><br>
 							1. 除了完成飞闻头条的需求开发计划，负责重构版后台管理系统的系统管理模块设计，主要包括账号管理、角色管理、权限管理、日志管理 ；<br>
 							2. 负责 android 、ios app 接口、h5 页面接口的开发；与第三方接口的对接；生成相应的接口文档 ；<br>
