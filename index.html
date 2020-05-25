@@ -132,7 +132,7 @@
                         <label class="left-label">数据库</label><span class="label-value">熟练使用 mysql 、 oracle</span>
                     </li>
 		    <li>
-                        <label class="left-label">开发工具</label><span class="label-value">熟练使用 intellij Idea 、 eclipse 等 IDE 进行代码编写， maven 进行项目构建，熟悉 SVN 、 Git代码管理</span>
+                        <label class="left-label">开发工具</label><span class="label-value">熟练使用 intellij Idea 、 eclipse 等 IDE 进行代码编写， maven 进行项目构建，熟悉 SVN 、 Git代码管理，了解 Docker 的使用，了解 DevOps</span>
                     </li>
 		    <li>
                         <label class="left-label">其他</label><span class="label-value">熟练tomcat 配置，熟悉 Nginx 配置</span>
@@ -185,38 +185,32 @@
                 <hr>
                 <ul class="experience-list">
 				<li>
-                    <h3>MM应用商场web网站 | 2018.12 - 2020.01</h3>
+                    <h3>飞闻头条、MM应用商场web网站 | 2018.11 - 2020.01</h3>
 					<p>
-						<b font-size="small">使用技术：</b>springboot 、oracle、mysql 、mybatis 、spring security 、 redis 、nginx <br>
-						<b font-size="small">项目描述：</b>							MM应用商场是中移互联网公司在运行的一个在运行近二十年的旧系统，分为前端应用系统、后台管理系统，前端应用系统主要负责查询并缓存最后的页面模板到memcache、redis中，采用封装servlet、类似于freemarker模板的页面、以及spring开发，运行在10台服务器上，使用f5负载均衡器，保证网站服务稳定；后台内容管理系统提供给运营人员管理数据，对数据的增删改时通过ActiveMQ通知各前台应用清理hibernate的二级缓存Ehcache的查询缓存，数据库使用oracle。由于旧系统源码版本失去管理控制，无法直接在旧系统工程进行代码编译，新的活动业务接口功能在新工程上开发dubbo服务provide部署到dubbo集群服务器，并注册到zookeeper集群，再以jar包放到旧系统中以 dubbo consumer 调用远程接口。<br>
+						<b font-size="small">使用技术：</b>springboot 、oracle、mysql 、mybatis 、spring security 、 redis 、nginx、ActiveMQ、dubbo<br>
+						<b font-size="small">项目描述：</b> 飞闻头条(MM头条、MM资讯)是中移动的资讯信息流APP，后台架构分为接口服务、客户端后台管理系统、资讯运营管理系统、爬虫模块四个部分。系统使用springboot框架开发，接口服务部署在四台服务器，使用nginx反向代理、负载均衡，数据库使用 mysql 。项目中多处使用redis缓存以及多线程技术，提高接口的查询返回速度。使用gitlab进行代码、文档版本控制，使用 maven 进行项目管理、打包发布，测试线使用 jenkins 进行集成部署。MM应用商场是中移互联网公司在运行的一个在运行近二十年的旧系统，分为前端应用系统、后台管理系统，前端应用系统主要负责查询并缓存最后的页面模板到memcache、redis中，采用封装servlet、类似于freemarker模板的页面、以及spring开发，运行在10台服务器上，使用f5负载均衡器，保证网站服务稳定；后台内容管理系统提供给运营人员管理数据，对数据的增删改时通过ActiveMQ通知各前台应用清理hibernate的二级缓存Ehcache的查询缓存，数据库使用oracle。由于旧系统源码版本失去管理控制，无法直接在旧系统工程进行代码编译，新的活动业务接口功能在新工程上开发dubbo服务provide部署到dubbo集群服务器，并注册到zookeeper集群，再以jar包放到旧系统中以 dubbo consumer 调用远程接口。<br>
 						<b font-size="small">责任描述：</b><br>
-							1. 负责重构版后台管理系统的系统管理模块设计；<br>
-							2. 与第三方接口的对接，生成相应的接口文档；<br>
-							3. 系统重构为 springcloud 微服务架构做准备；<br>
-							4. 负责对旧系统的业务逻辑分析及梳理。<br>
-                    </p>
-				</li>
-				<li>
-                    <h3>飞闻头条 | 2018.11 - 2019.09</h3>
-					<p>
-						<b font-size="small">使用技术：</b>springboot 、oracle、mysql 、mybatis 、spring security 、 redis 、nginx<br>
-						<b font-size="small">项目描述：</b>	飞闻头条(MM头条、MM资讯)是中移动的资讯信息流APP，后台架构分为接口服务、客户端后台管理系统、资讯运营管理系统、爬虫模块四个部分。系统使用springboot框架开发，接口服务部署在四台服务器，使用nginx反向代理、负载均衡，数据库使用 mysql 。项目中多处使用redis缓存以及多线程技术，提高接口的查询返回速度。使用gitlab进行代码、文档版本控制，使用 maven 进行项目管理、打包发布，测试线使用 jenkins 进行集成部署。<br>
-						<b font-size="small">责任描述：</b><br>
-							1. 完成飞闻头条的需求开发计划，主要包括账号管理、角色管理、权限管理、日志管理；<br>
-							2. 负责 android 、ios app 接口、h5 页面接口的开发；<br>
-							3. 负责旧系统的维护，历史遗留 bug 的修复；<br>
-                    </p>
+							1. 除了完成飞闻头条的需求开发计划，负责重构版后台管理系统的系统管理模块设计，主要包括账号管理、角色管理、权限管理、日志管理 ；<br>
+							2. 负责 android 、ios app 接口、h5 页面接口的开发；与第三方接口的对接；生成相应的接口文档 ；<br>
+							3. 负责旧系统的维护，历史遗留 bug 的修复 ；<br>
+							4. 为系统重构为 springcloud 微服务架构做准备，负责对旧系统的业务逻辑分析及梳理。<br>
+						<b font-size="small">成果：</b><br>
+							1. 此项目为接手其它公司的东西，MM应用商城年代久远，原有很多文档基本都遗失了。入职后在修复遗留bug的同时，与前运维沟通、梳理了整个项目的框架，经过一个多月的时间了解了整个项目的架构和相应功能实现，修复了过去提出的共计几十个问题单，并与测试沟通，提出了我在代码梳理和自行测试中发现的几个问题，让他提单给我，然后一并修复了。<br>
+							2. 短地址小应用的短地址配置生效时间由第2天生效缩短为几分钟之内：在原有短地址架构的基础上平滑升级。原来的设计为在准现网一个小web程序的页面配置k-v（短地址标识-长地址），数据存储在后台一个配置文件中，使用sync定时同步到十台前端服务器，需要各服务器的短地址程序在凌晨3点重启后生效。我让运维将同步的频率控制在5分钟同步一次，并且改造项目使用 java 的定时线程池定时3分钟读取一次配置文件，并将原来的存储对象HashMap改为ConcurrentHashMap保证数据安全。上线后稳定运行，提升了运营效率。<br>
+							3. 短时间之内响应客户需求，加班加点及时完成了工信部要求的APP隐私政策的后台注销接口开发。<br>
+							4. 配合前端同事提供返回广告api token的接口，成功接入广告后提升了运营收入。<br>
+					</p>
 				</li>
 				<li>
                     <h3>广州市城市总体规划管理系统 | 2017.10 - 2018.10</h3>
 					<p>
 						<b font-size="small">使用技术：</b>spring 、springmvc、mybatis 、oracle/mysql、jquey、echarts、bootstrap、vue、jbpm4.0 、 redis 、nginx <br>
 						<b font-size="small">项目描述：</b>						系统的背景为新一轮广州市城市总体规划的辅助系统，主要是结合“多规合一”一张图子系统，对广州的重点建设项目进行全生命周期的审批、推进。系统使用ssm框架，数据库为oracle/mysql，项目审批流程使用jbpm工作流框架。系统的首页以及大屏展示页面使用echart进行图表展示，使用nginx反向代理解决前后端分离的跨域问题，多个子系统用户登录使用spring-session+redis来进行session共享。项目实施过程中还辅助客户生成了《广州市城市总体规划（2017-2035年）》草案的专题展示界面。<br>
-						<b font-size="small">责任描述：</b><br>
+						<b font-size="small">责任&成果：</b><br>
 							1. 负责项目审批流程业务的需求开发 ，审批过程中的产生的 pdf 文件采用mozilla开源的PDF.js组件来进行在线查看；<br>
 							2. 将流程展示组件由 flash 升级为 js 展示，解决客户对 flash player 的不兼容问题；<br>
 							3. 实现对审批过程中产生的附件进行“档案管理”的模块的开发，实现规划知识库模块开发；<br>
-							4. 分配小组任务，指导新同事熟悉代码工程结构进行需求开发。<br>
+							4. 参与客户的业务会议，收集需求问题；分配小组任务，指导新同事熟悉代码工程结构进行需求开发。<br>
                     </p>
 				</li>
 				<li>
@@ -224,12 +218,12 @@
 					<p>
 						<b font-size="small">使用技术：</b>spring 、springmvc、mybatis 、oracle/mysql、easyui、echarts、jquey、bootstrap、jbpm4.0 、CAS 、jersey<br>
 						<b font-size="small">项目描述：</b>“多规合一”是指统筹衔接国民经济和社会发展规划、城乡规划、土地利用规划和生态环境保护规划等多种规划，多规合一信息平台运用信息化手段，开发出“制定一套标准、形成一张蓝图、再造一套审批流程”的GIS平台。平台采用Ads框架进行开发，ads集成了SSH框架、常用的工具包以及GIS开发包。平台分为两个工程，第一个为业务系统同时也是运维系统，作为第二个地图展示系统的后台。因为平台包含多个系统，所以采用了CAS的开源SSO解决方案。业务主要为规划项目审批，采用了JBPM工作流框架，为第三方提供了常用的项目查询接口。<br>
-						<b font-size="small">责任描述：</b><br>
-							1. 实现时下最实用的业务需求，按时完成上级提出的目标；<br>
-							2. 流程业务的开发；<br>
-							3. 与负责GIS开发的同事合作进行业务开发，例如项目定位、属性查询等；<br>
+						<b font-size="small">责任&成果：</b><br>
+							1. 实现客户的业务需求，按时完成上级提出的目标 。产品采取复制到实施组再定制开发的形式，按时按质地完成了实施部门提交的疑难需求的开发，缩短了项目开发周期；<br>
+							2. 负责项目审批流程业务的开发，进行前端页面、后台接口开发。实现了一些客户审美疲劳要求的换肤功能；<br>
+							3. 与负责GIS地图开发的同事进行合作开发，例如项目定位、属性查询等 。 自学了arcgis for js的一些简单使用方法，可自行进行一些简单功能开发与问题排查；<br>
 							4. 文件在线查看组件、流程图前端FLASH组件转js版本开发；<br>
-							5. 对公司基础框架的后台进行改造，分级权限管理。<br>
+							5. 对公司基础框架的后台系统进行改造，开发分级权限管理功能。<br>
                         </p>
 					</li>
 					
