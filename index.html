@@ -76,10 +76,7 @@
                         <label class="left-label">期望薪资</label><span class="label-value">年薪17-20万</span>
                     </li> 
 		    <li>
-                        <label class="left-label">工作地点</label><span class="label-value">广州</span>
-                    </li>
-		    <li>
-                        <label class="left-label">工作性质</label><span class="label-value">全职</span>
+                        <label class="left-label">工作地点</label><span class="label-value">主要广州</span>
                     </li>
                     <li>
                         <label class="left-label">目前状况</label><span class="label-value">离职状态，可立即上岗</span>
@@ -108,7 +105,7 @@
                 <hr>
                 <ul class="stack-list">
 		    <li>
-                        <label class="left-label">开源作品</label><span class="label-value">因热爱编程应用，个人利用树莓派进行linux的开发实战，通过 GPIO 接口采用mysql数据库、flask 框架以及echarts等技术进行python项目开发。源码地址：https://github.com/yeqizhang</span>
+                        <label class="left-label">开源作品</label><span class="label-value">因热爱编程应用，个人利用树莓派进行linux的开发实战，通过 GPIO 接口采用mysql数据库、flask 框架以及echarts等技术进行python项目开发。https://github.com/yeqizhang</span>
 		    </li>
                     <li>
                         <label class="left-label">后端技术</label><span class="label-value">熟练java 集合、多线程</span>
@@ -120,13 +117,10 @@
                         <label class="left-label">框架组件</label><span class="label-value">熟练spring 生态体系技术，包括 springmvc 、 mybatis 、 hibernate 、 springboot ，了解springcloud 组件</span>
                     </li>
                     <li>
-                        <label class="left-label">服务</label><span class="label-value">熟练redis , 了解 Zookeeper 、 ElasticSearch</span>
+                        <label class="left-label">数据库/服务</label><span class="label-value">熟练mysql 、 oracle;熟练redis , 了解 Zookeeper 、 ElasticSearch</span>
                     </li>
 		    <li>
-                        <label class="left-label">数据库</label><span class="label-value">熟练mysql 、 oracle</span>
-                    </li>
-		    <li>
-                        <label class="left-label">开发工具</label><span class="label-value">熟练intellij Idea 、 eclipse 等 IDE 进行代码编写， maven 进行项目构建，熟悉 SVN 、 Git代码管理，了解 Docker 的使用，了解 DevOps</span>
+                        <label class="left-label">开发工具</label><span class="label-value">熟练intellij Idea 、 eclipse 等 IDE 进行代码编写， maven 进行项目构建，熟悉 SVN 、 Git代码管理，了解 Docker、DevOps</span>
                     </li>
 		    <li>
                         <label class="left-label">其他</label><span class="label-value">熟练tomcat 配置，熟悉 Nginx 配置</span>
@@ -195,9 +189,8 @@
 						MM应用商场是中移互联网公司在运行的一个在运行近二十年的旧系统，分为前端应用系统、后台管理系统，前端应用系统主要负责查询并缓存最后的页面模板到memcache、redis中，采用封装servlet、类似于freemarker模板的页面、以及spring开发，运行在10台服务器上，使用f5负载均衡器，保证网站服务稳定；后台内容管理系统提供给运营人员管理数据，对数据的增删改时通过ActiveMQ通知各前台应用清理hibernate的二级缓存Ehcache的查询缓存。<br>
 						<b font-size="small">责任描述：</b><br>
 							1. 除了完成飞闻头条的需求开发计划，负责重构版后台管理系统的系统管理模块设计，主要包括账号管理、角色管理、权限管理、日志管理 ；<br>
-							2. 负责 android 、ios app 接口、h5 页面接口的开发；与第三方接口的对接；生成相应的接口文档 ；<br>
-							3. 负责旧系统的维护，历史遗留 bug 的修复 ；<br>
-							4. 为系统重构为 springcloud 微服务架构做准备，负责对旧系统的业务逻辑分析及梳理。<br>
+							2. 负责 android 、ios app 接口、h5 页面接口的开发；与第三方接口的对接；生成相应的接口文档 ；旧系统的维护，历史遗留 bug 的修复 <br>
+							3. 为系统重构为 springcloud 微服务架构做准备，负责对旧系统的业务逻辑分析及梳理。<br>
 						<b font-size="small">成果：</b><br>
 							1. MM应用商城是运营年代已久的项目，入职起初，在遗失很多原有文档的基础上，通过与对接运维相关人员，解决了历史遗留的几十个难点问题，并梳理了整个项目的框架，得到了领导认可和赞许。<br>
 							2. 通过我对程序的设计更改，实现将短地址小应用的短地址配置生效时间由第2天生效缩短为几分钟之内，即修复了原有的问题，又保证数据安全，提升了运营效率。<br>
@@ -224,10 +217,9 @@
 						<b font-size="small">项目描述：</b>“多规合一”是指统筹衔接国民经济和社会发展规划、城乡规划、土地利用规划和生态环境保护规划等多种规划，多规合一信息平台运用信息化手段，开发出“制定一套标准、形成一张蓝图、再造一套审批流程”的GIS平台。平台采用Ads框架进行开发，ads集成了SSH框架、常用的工具包以及GIS开发包。平台分为两个工程，第一个为业务系统同时也是运维系统，作为第二个地图展示系统的后台。因为平台包含多个系统，所以采用了CAS的开源SSO解决方案。业务主要为规划项目审批，采用了JBPM工作流框架，为第三方提供了常用的项目查询接口。<br>
 						<b font-size="small">责任&成果：</b><br>
 							1. 实现客户的业务需求，按时完成上级提出的目标 。产品采取复制到实施组再定制开发的形式，按时按质地完成了实施部门提交的疑难需求的开发，缩短了项目开发周期；<br>
-							2. 负责项目审批流程业务的开发，进行前端页面、后台接口开发。实现了一些客户审美疲劳要求的换肤功能；<br>
+							2. 负责项目审批流程业务的开发，进行前端页面、后台接口开发，实现了一些客户审美疲劳要求的换肤功能；<br>
 							3. 与负责GIS地图开发的同事进行合作开发，例如项目定位、属性查询等 。 自学了arcgis for js的一些简单使用方法，可自行进行一些简单功能开发与问题排查；<br>
-							4. 文件在线查看组件、流程图前端FLASH组件转js版本开发；<br>
-							5. 对公司基础框架的后台系统进行改造，开发分级权限管理功能。<br>
+							4. 文件在线查看组件、流程图前端FLASH组件转js版本开发；对公司基础框架的后台系统进行改造，开发分级权限管理功能。<br>
                         </p>
 					</li>
 					
@@ -239,8 +231,8 @@
 						    <b font-size="small">责任描述：</b><br>
 								1. 按照需求文档开发相应模块功能；<br>
 								2. 负责对系统进行大部分功能测试，记录并报告bug，之后进行修改，比如修复登录异常、查询展示异常等bug；<br>
-								3. 对查询速度进行优化，频繁使用的公共查询方法独立出来封装；<br>
-								4. 负责界面的适配、美化。<br>
+								3. 对查询速度进行优化，频繁使用的公共查询方法独立出来封装；负责界面的适配、美化。<br>
+							
                     </li>
                 </ul>
             </div>
