@@ -79,6 +79,7 @@ h1, h2, h3, h4, h5 {
     list-style: none;
     padding-left: 0px;
     line-height: 1.5;
+    color: black;
 }
 
 .stack-list li {
@@ -195,7 +196,6 @@ progress::-moz-progress-value {
 .left-label {
     display: inline-block;
     width: 120px;
-    color: black;
 }
 
 .portrait {
@@ -216,8 +216,8 @@ progress::-moz-progress-value {
     position: relative;
     margin: 0 auto;
 
-    width: 1240px;
-    height: 1754px;
+    width: 1280px;
+    height: 1794px;
     background-color: white;
 
 }
